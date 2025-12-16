@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca</title>
+</head>
+<body>
+
+    <h2>Cadastrar Livro</h2>
+    <input id="codigo" placeholder="Código">
+    <input id="titulo" placeholder="Título">
+    <input id="autor" placeholder="Autor">
+
+    <select id="tipo">
+        <option value="comum">Comum</option>
+        <option value="referencia">Referência</option>
+        <option value="infantil">Infantil</option>
+    </select>
+
+    <button onclick="cadastrar()">Cadastrar</button>
+
+    <hr>
+
+    <h2>Empréstimo / Devolução</h2>
+    <input id="codigoLivro" placeholder="Código do livro">
+
+    <button onclick="emprestar()">Emprestar</button>
+    <button onclick="devolver()">Devolver</button>
+
+    <hr>
+
+    <button onclick="listarEmprestados()">Listar Emprestados</button>
+    <button onclick="listarHistorico()">Listar Histórico</button>
+
+    <pre id="saida"></pre>
+
+    <script src="prova.js"></script>
+</body>
+</html>
