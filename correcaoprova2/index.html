@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">k
+</head>
+
+<body>
+    <main>
+        <section>
+            <label for="classeAnimal">Selecione a classe animal</label>
+            <select name="classeAnimal" id="classeAnimal">
+                <option value="mamifero">Mamiferos</option>
+                <option value="ave">Aves</option>
+                <option value="peixes">Peixes</option>
+            </select>
+
+            <label for="animal">Selecione o animal</label>
+            <select name="animal" id="animal">
+            </select>
+            <Input type="text" placeholder="nome ou identificador do animal" id="idAnimal"></Input>
+            <Input type="text" placeholder="Idade do animal" id="idadeAnimal"></Input>
+            <button type="button" id="btSalvarNovoAnimal">Salvar animal</button>
+        </section>
+        <section>
+            <h3>Animais que podem conviver</h3>
+            <div class="convivencia">
+                <div class="divTipos">
+                    <div>
+                        <h3>Tipo 1</h3>
+                        <select id="classeAnimalTp1">
+                            <option value="mamifero">Mamiferos</option>
+                            <option value="ave">Aves</option>
+                            <option value="peixes">Peixes</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select name="animal" id="animalTp1">
+                        </select>
+                    </div>
+                </div>
+                <div class="divTipos">
+                    <div>
+                        <h3>Tipo 2</h3>
+                        <select id="classeAnimalTp2" placeholder="selecione o animal">
+                            <option value="mamifero">Mamiferos</option>
+                            <option value="ave">Aves</option>
+                            <option value="peixes">Peixes</option>
+                        </select>
+                        <br>
+                        <select name="animal" id="animalTp2" placeholder="selecione o animal">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="btSalvarNovaRegraConv">Salvar</button>
+
+        </section>
+
+        <section>
+            <h3>Criação de jaulas</h3>
+            <Input type="text" placeholder="Identificador" id="identificadorJaula"></Input>
+            <Input type="text" placeholder="Nome jaula" id="nomeJaula"></Input>
+
+            <button type="button" id="btSalvarNovajaula">Salvar</button>
+        </section>
+       
+        <section>
+            <h3>Tipo de animais que a Jaula suporta</h3>
+            <Input type="text" placeholder="Identificador" id="idJaulaSetTipos"></Input>
+            <div>
+                <select id="ClasseAnimalPermitidoJaula">
+                    <option value="mamifero">Mamiferos</option>
+                    <option value="ave">Aves</option>
+                    <option value="peixes">Peixes</option>
+                </select>
+            </div>
+            <div>
+                <select name="animal" id="AnimalPermitidoJaula">
+                </select>
+            </div>
+            <button type="button" id="btSalvarNovoTipoParaJaula">Adicionar</button>
+        </section>
+        <section>
+            <h3>Enjaular animal</h3>
+            <Input type="text" placeholder="nome ou identificador do animal" id="enjaularIdAnimal"></Input>
+            <Input type="text" placeholder="nome ou identificador do jaula" id="enjaularIdJaula"></Input>
+            <button type="button" id="btEnjaular">Adicionar</button>    
+        </section>
+    </main>
+    <aside id="area-jaulas">
+        <div class="jaula-card template" style="display:none">
+            <h3 class="nome-jaula"></h3>
+            <p class="id-jaula"></p>
+            <strong>Tipos permitidos:</strong>
+            <ul class="tipos-permitidos"></ul>
+            <strong>Animais na jaula:</strong>
+            <ul class="lista-animais"></ul>
+        </div>
+    </aside>
+
+    <script src="zoo.js"></script>
+</body>
+
+</html>

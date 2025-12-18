@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+section{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 10px;
+    gap: 10px;
+    background-color: rgb(75, 75, 75);
+}
+
+.convivencia{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(65, 65, 65);
+    gap: 10px;
+}
+
+.divTipos{
+    width: 50%;
+}
+
+.jaula-card {
+    background: #363636;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
